@@ -1,12 +1,11 @@
 
-JDK Application:
+JDK Applications:
 
-// Different kinds of logging is handled through chain of responsibility.
+## Different kinds of logging is handled through chain of responsibility.
 
 java.util.logging.Logger#log(LogRecord record) method.
 
-// Post the LogRecord to all our Handlers, and then to
-        // our parents' handlers, all the way up the tree.
+## Post the LogRecord to all our Handlers, and then to our parents' handlers, all the way up the tree.
 
         Logger logger = this;
         while (logger != null) {
